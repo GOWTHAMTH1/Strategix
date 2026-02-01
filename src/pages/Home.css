@@ -1,0 +1,116 @@
+.hero{
+    width: 100vw;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: white; 
+    
+}
+.hero .content .heading{
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+}
+.home{
+    background-color: black;
+    color: white;
+}
+
+.philosophy-container{
+    display: grid;
+    grid-template-columns:1fr ;
+    gap: 10px;
+    place-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.img,.philosophy .content{
+    width: 100%;
+    height:100%;
+}
+img{
+    width: 100%;
+    min-width: 300px;
+
+}
+.reason{
+    list-style-position:inside;
+    text-align:left;
+    width: 100%;
+    border: 2px solid rgb(83, 82, 82);
+    background-color: rgb(99, 96, 96);
+    padding: 20px;
+}
+.services{
+    display: grid;
+    grid-template-columns:1fr ;
+    place-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.specifications{
+    text-align: left;
+    list-style-position: inside;
+}
+
+@media (min-width:1024px) {
+
+    .philosophy-container{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+    } 
+    
+    
+    .img2{
+        width:100%;
+        height:100%;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        aspect-ratio:9/16 ;
+    }
+    .reason{
+        list-style-position:inside;
+        text-align:center;
+        border: 2px solid rgb(77, 76, 76);
+        background-color: rgb(41, 40, 40);
+        border-radius: 10px;
+        margin-bottom: 0%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

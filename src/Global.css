@@ -1,0 +1,48 @@
+.contact{   
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.contact-details{
+    width: 100%;
+}
+.contact .getinTouch{
+   text-align: center;
+   margin: 10px;
+}
+form .InfoField{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px 10px;
+}
+phonefield{
+    display: flex;
+}
+form select {
+    display: inline;
+    width: 50px;
+    height: 30px;
+}
+form div input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+button{
+    background-color: rgb(2, 88, 122);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+button:hover{
+    background-color: rgb(44, 168, 218);
+    color: white;
+}
+.LetsWorkTogether{
+    padding: 50px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}

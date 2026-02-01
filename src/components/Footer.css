@@ -1,0 +1,26 @@
+.footer{
+    border-top: 1px solid white;
+    padding: 10px;
+  
+}
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-navigation p{
+    font-size: small;
+}
+.footer-navigation .navigation{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-navigation .navigation a{
+    font-weight: bold;
+    margin-left: 15px;
+}
+.logoName{
+    font-weight: bold;
+    
+}
