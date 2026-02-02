@@ -1,4 +1,5 @@
 import aiearth from '../assets/aearth.jpg'
+import { FaStarOfLife } from "react-icons/fa";
 const Services = () => {
     const specializedIn=[
         "Meta ads",
@@ -9,23 +10,22 @@ const Services = () => {
     ]
   return (
     <div className="services section">
-        <div className="aierathImg" >
+        <div className="aiearthImg" >
             <img src={aiearth} alt="ai earth" />
         </div>
-       <div className="content">
-        <section >
-            <p>What we do,</p>
-            <h1 >Your trusted partner for <span style={{color:"blue"}} >DIGITAL SUCCESS</span></h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eum debitis obcaecati architecto quia veniam vitae suscipit eveniet quod atque.</p>
-            <div className="specifications" >
-                <ul>
-                    {specializedIn.map((specials,index)=>(<li key={index}>{specials}</li> ))}
-                </ul>
-            </div>
-        </section>
-
+        <div className="content">
+            <section >
+                <p> <FaStarOfLife className='staricon'/> What we do,</p>
+                <h1 >Your trusted partner for <span style={{color:"blue"}} >DIGITAL SUCCESS</span></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eum debitis obcaecati architecto quia veniam vitae suscipit eveniet quod atque.</p>
+                <div className="specifications" >
+                    <ul>
+                    <FaStarOfLife className='staricon'/> We Specialize in
+                        {specializedIn.map((specials,index)=>(<li key={index}>{specials}</li> ))}
+                    </ul>
+                </div>
+            </section>
        </div>
-
     </div>
   )
 }

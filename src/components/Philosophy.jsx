@@ -16,13 +16,13 @@ const Philosophy = ({title,subtitle,subtitle2}) => {
                 <p>{subtitle}</p>
             </div>
             <div className="img img1">
-            <img src={teamwork1} alt="group of people image 1" />
+                <img src={teamwork1} alt="group of people image 1" />
             </div>
             <div className="img img2">
-            <img src={teamwork2} alt="group of people image 2" />
+                <img src={teamwork2} alt="group of people image 2" />
             </div>    
             <div className="img img3">
-            <img src={teamwork3} alt="group of people image 3" />
+                <img src={teamwork3} alt="group of people image 3" />
             </div>    
                 
            <div className="reason content">

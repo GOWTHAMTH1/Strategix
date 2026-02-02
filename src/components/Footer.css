@@ -1,12 +1,50 @@
+
+.footer{   
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding-bottom: 5px;
+}
+.footer-navigation{
+    display: grid;
+    grid-template-rows: 1fr ;
+    justify-content: center;
+}
+.icons{
+    margin:5px 8px ;
+}
+.links a{
+    font-size: x-small;
+    margin: 2px 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (min-width:1024px) {
+
 .footer{
     border-top: 1px solid white;
     padding: 10px;
-  
 }
 .footer-navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.navigation{
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
+}
+
+
+.icons{
+    margin:5px 8px ;
 }
 .footer-navigation p{
     font-size: small;
@@ -22,5 +60,8 @@
 }
 .logoName{
     font-weight: bold;
-    
+}
+.span1{
+    font-size: 2em;
+}
 }

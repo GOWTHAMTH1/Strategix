@@ -4,9 +4,9 @@ const Hero = ({title,subtitle}) => {
     <div className="hero ">
      
       <div className='content'>
-      <div className='heading'>{title}</div>
-      <p>{subtitle}</p>
-    </div>
+        <div className='heading'>{title}</div>
+        <p>{subtitle}</p>
+      </div>
  
     </div>
   )

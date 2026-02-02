@@ -1,6 +1,7 @@
 import '../Global.css'
 import Hero from '../components/Hero'
 import { useState } from 'react'
+import logo from '../assets/logo2.png'
 const Contact = () => {
       const [FormData,SetFormData]=useState({
         FirstName:"",
@@ -20,21 +21,25 @@ const Contact = () => {
       }
       const HandleSubmit=(e)=>{
             e.target.preventDefault()
-            console.log(formData);
+            console.log(FormData);
       }
   return (
     <div className="contact">
-      <div className="contact-details">
       <Hero title="CONTACT US"/>
-      <div className="getinTouch">
-        <div>
-          logo
+      <div className="contact-details">
+        <div className="getinTouch">
+          <div className='LogoImg'>
+            <img src={logo} alt="logo" />
+            <div className="logoName">
+              <div>STRATEGIX</div>
+              <h6>DIGITAL MEDIA</h6>
+            </div>
+          </div>
+          <div className="getinTouch-text" >
+              Get in touch with <br /> <span >STRATEGIX</span>
+          </div>
         </div>
-        <div className="getinTouch-text" >
-            Get in touch with <br /> <span >STRATEGIX</span>
-        </div>
-      </div>
-      <div className="form" onSubmit={HandleSubmit}>
+        <div className="form" onSubmit={HandleSubmit}>
         <form action="" >
           <div className='InfoField'>
             <label htmlFor="FirstName">First Name</label>
@@ -70,11 +75,11 @@ const Contact = () => {
                 <button type='submit' >Send</button>
            </div>
         </form>
+        </div>
+        <div className="LetsWorkTogether">
+          <div>LET'S <br /> WORK  TOGETHER</div>
+        </div>
       </div>
-      <div className="LetsWorkTogether">
-        <div>LET'S <br /> WORK  TOGETHER</div>
-      </div>
-    </div>
     </div>
   )
 }

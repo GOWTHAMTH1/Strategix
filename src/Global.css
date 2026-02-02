@@ -1,23 +1,40 @@
 .contact{   
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-content: center;
+    background-color: black;
+    color: white;
 }
 .contact-details{
     width: 100%;
+    margin-top: 10px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center; 
 }
 .contact .getinTouch{
    text-align: center;
-   margin: 10px;
+   margin-bottom: 20px;
+}
+.LogoImg{
+    min-width: 100px;
+    height: 100px;
+    color: white;
+    overflow: hidden;
+}
+.LogoImg img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    
 }
 form .InfoField{
     display: grid;
     grid-template-columns: 1fr;
     margin: 5px 10px;
 }
-phonefield{
+input{
+    border: none;
+}
+.phonefield{
     display: flex;
 }
 form select {
@@ -41,8 +58,91 @@ button:hover{
     color: white;
 }
 .LetsWorkTogether{
-    padding: 50px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: larger;
     font-weight: bold;
     text-align: center;
+}
+.GetinTouch{
+    margin: 10px;
+}
+.Booking{
+    margin: 5px;
+}
+.BookingBtn{
+    margin:10px 0px;
+    width: fit-content;
+}
+.GetinTouchBtn{
+    margin:0px 5px;
+    background-color: purple;
+    padding: 8px;
+    width: fit-content;
+}
+
+
+@media (min-width:1024px) {
+    .LogoImg{
+        min-width: 200px;
+        height: 200px;
+    }
+    .contact-details{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        justify-content: center;
+        align-items: center;
+    }
+    form .InfoField{
+        display: grid;
+        grid-template-columns:100px 300px;
+        margin: 10px;
+    }
+    .LetsWorkTogether{
+        grid-column: 1/-1;
+        height: 100vh;
+        font-size: xx-large;
+        text-align: center;
+        font-weight: bold;
+    }
+    /* Get in touch component */
+.GetinTouch{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-around;
+    padding: 10px;
+}
+.highlights{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+}
+.Booking{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.BookingBtn{
+    width: fit-content;
+    margin-left: 20px;
+}
+.GetinTouchBtn{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;    
+    margin: 20px;
+}
+
+/*-----Section1 Component------*/
+
 }
