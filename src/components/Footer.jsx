@@ -7,8 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
         <div className="footer-navigation">
-          <p> At our creative digital agency Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nam deleniti hic, impedit aperiam odio dignissimos tenetur? Hic, deserunt itaque repellendus repellat at fuga! Accusamus, fugiat id, temporibus amet accusantium voluptatibus quidem qu
-              od vel iure quo eligendi est a quisquam eaque porro omnis deleniti autem corrupti aperiam, ad nesciunt alias.</p>
+          <p>At our Creative Digital Agency, we bring your ideas to life by crafting engaging, impactful digital experiences that captivate audiences and drive results. From innovative web design to compelling content and cutting-edge digital strategies.</p>
           <div className="navigation">
               <div className="links">
                 <NavLink to='/'>HOME</NavLink>
@@ -20,9 +19,9 @@ const Footer = () => {
                 <NavLink to='contact'>CONTACT</NavLink>
               </div>
               <div className="Icons-container">
-                 <FaXTwitter className='icons'/>
-                 <FaFacebookF className='icons'/>
-                 <FaLinkedinIn className='icons'/>
+                <a href="https://x.com/twitt_login?lang=en"><FaXTwitter className='icons'/></a>
+                <a href="https://www.facebook.com/"><FaFacebookF className='icons'/></a>
+                <a href="https://www.linkedin.com/login"><FaLinkedinIn className='icons'/></a>
             </div>
             </div>
            

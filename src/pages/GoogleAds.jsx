@@ -1,23 +1,95 @@
 import GetinTouch from "../components/GetinTouch"
 import Hero from "../components/Hero"
 import Section1 from "../components/Section1"
+import invention from '../assets/invention.jpg'
+import grow from '../assets/growth6.jpg'
+import teamwork4 from '../assets/teamwork4.jpg'
+import Quality from "../components/Quality"
+import AdsOffer from "../components/AdsOffer"
+import adsImg from '../assets/istockpic.jpg'
 
 const GoogleAds = () => {
+   const GetinTouchData={
+    subheading:"Let's turn intent into revenue-The right way",
+    heading:"Ready to use Google Ads the Right Way?",
+    description:"If you are serious about quality leads, strategix execution, and long-term growth,we are ready to work with you",
+    buttonName:"Book a Google Ads"
+  }
+   const MainSection={
+      "inventionImg":invention,"growthImg":grow,"teamwork4Img":teamwork4
+    }
+  const MiniSectionData={
+    heading:"Our Google Ads Strategy",
+    subheading:"Our digital marketing process begins with discovery and research to understand your goals. We then develop a tailored strategy and implement campaigns across various channels. Continuous monitoring and optimization ensure effectiveness, followed by regular reporting to track performance. Finally, we refine and scale efforts for sustained growth and success."
+  }
+  const Section1Data={
+    heading:"Research & Development First (Week 1)"
+  ,description:"Before launching ads, we invest 1 full week in understanding your business."
+  ,ulHead1:"This includes ",ulHead2:"This phase requires patience and flexibility"
+  }
+  const Section2Data={
+    heading:"Growth & Optimization Phase (Month 1)"
+  ,description:"The first month is treated as a growth and learning statge"
+  ,ulHead1:"During this phase ",ulHead2:""
+  }
+  const Section3Data={
+    heading:"Scaling with Control"
+  ,description:"Once data confirms consistency"
+  ,ulHead1:"Includes: ",ulHead2:""
+  }
+        const research=[
+"Keyword intent & search behavior analysis",
+"Competitor ad strategy review",
+"Funnel & landing page alignment",
+"Budget efficiency planning","Platform suitability validation"]
+
+        const research2=[
+"Higher lead accuracy",
+"Better Quality Scores",
+"Lower cost per quality lead"]
+
+        const growth=[
+          "Test multiple keyword clusters",
+        "Refine ad copy and extensions",
+      "Filter low-intent searches",
+    "Continnues refign compaigns","Improve conversion tracking"]
+  
+        const Scaling=[ "Budgets are scaled responsibly",
+"Winning keywords are prioritized",
+"Cost efficiency improves",
+"Lead quality becomes predictable"]
+
+ const QualityData={
+    heading:"Quality Over Quantity - Always",
+    heading1:"Most agencies report",
+    Qlist_1:["Clicks","Impressions","Traffic"],
+    heading2:"We focus on",
+    Qlist_2:["Lead intent","Conversion accuracy","Business relevance","ROI sustainability"]
+  }
+  const ads={
+     title:"What We Offer in Google Ads",
+     ulhead1:"Google Ads Services We Specialize In",
+     features1:["Google Search Ads","Google Display Ads","YouTube Ads","Remarketing & Retargeting","Conversion Tracking & Analytics setup"
+],
+     ulhead2:"Our strategies",
+     features2:["Highlighting ROI and Expertise","Campaign structure","High Intent and Long Tail"],
+     img:adsImg
+   }
+
   return (
-    <div>
-      <Hero title="CUZTOMIZABLE DIGITAL MARKETING SERVICES WITH AI"
-      subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, id."
+    <div className="fragment" >
+      <Hero title="AI Google Ads Management"
+      subtitle="We Use Al-Powered Analysis, Deep Research, And Structured Optimization To Ensure Every Rupee Spent Works Toward Real Business Growth."
       />
-      <GetinTouch 
-       subtitle="lorem ipsum dolor sit amet"
-       heading="ipsum dolor sit amet consectetur adipisicing" 
-       description="Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur sit amet consectetur adipisicing elit. Corrupti, id."
-       btnName="BOOK A GOOGLE ADS"  />
-      
-      <Section1
-       
-       />
+      <AdsOffer ads={ads} />
+      <GetinTouch GetinTouchData={GetinTouchData} />
+
+       <Section1 
+      MainSection={MainSection}  MiniSectionData={MiniSectionData} Section1Data={Section1Data} Section2Data={Section2Data} Section3Data={Section3Data}
+      research={research} research2={research2} Scaling={Scaling} growth={growth}  />
+      <Quality QualityData={QualityData} />
     </div>
+
   )
 }
 

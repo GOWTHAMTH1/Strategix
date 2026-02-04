@@ -1,4 +1,4 @@
-
+/*-----------------Footer Component-----------------*/
 .footer{   
     padding: 5px;
     background-color: black;
@@ -21,10 +21,15 @@
     text-decoration: none;
     font-weight: bold;
 }
-
-
+a{
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+/************************ MEDIA QUERIES ***********************/
 @media (min-width:1024px) {
-
+/*-----------------Footer Component-----------------*/
 .footer{
     border-top: 1px solid white;
     padding: 10px;
@@ -63,5 +68,11 @@
 }
 .span1{
     font-size: 2em;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: blue;
 }
 }

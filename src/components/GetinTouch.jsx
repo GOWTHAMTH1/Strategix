@@ -1,20 +1,20 @@
 import '../Global.css'
 import { MdArrowOutward } from "react-icons/md";
 
-const GetinTouch = ({subtitle,heading,description,btnName}) => {
+const GetinTouch = ({GetinTouchData}) => {
   return (
-    <div>
+    <div className='GetinTouch-Container' >
         <div className="GetinTouch">
             <div className="highlights">
-              <p>{subtitle}</p>
-              <h1>{heading}</h1>
+              <p>{GetinTouchData.subheading}</p>
+              <h1>{GetinTouchData.heading}</h1>
               <div className="Booking">
-                <p>{description}</p>
-                <button className="BookingBtn" >{btnName}</button>
+                <p>{GetinTouchData.description}</p>
+                <button className="BookingBtn btn" >{GetinTouchData.buttonName}</button>
               </div>
             </div>
-            <div className="GetinTouchBtn">
-              <div> <MdArrowOutward/>  Get in Touch</div>
+            <div className="GetinTouchBtn btn">
+              <div> <MdArrowOutward/> Get In Touch  </div>
             </div>
         </div>
     </div>

@@ -1,3 +1,4 @@
+/*-----------------Contact Component-----------------*/
 .contact{   
     width: 100%;
     background-color: black;
@@ -14,6 +15,7 @@
    text-align: center;
    margin-bottom: 20px;
 }
+
 .LogoImg{
     min-width: 100px;
     height: 100px;
@@ -66,7 +68,11 @@ button:hover{
     font-weight: bold;
     text-align: center;
 }
-.GetinTouch{
+
+/*-----------------GetInTouch Component-----------------*/
+.GetinTouch-Container{
+    background:linear-gradient(to left ,black,rgb(68, 67, 67));
+    border-radius: 15px;
     margin: 10px;
 }
 .Booking{
@@ -75,16 +81,90 @@ button:hover{
 .BookingBtn{
     margin:10px 0px;
     width: fit-content;
+    
+}
+.GetinTouch{
+    padding: 5px;
+    font-size: small;
 }
 .GetinTouchBtn{
     margin:0px 5px;
     background-color: purple;
+    color: white;
     padding: 8px;
     width: fit-content;
+     cursor: pointer;
+}
+
+/*-----------------Quality Component-----------------*/
+.Quality{
+    padding:10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 8px;
+}
+.Qh1{
+    font-size: large;
+}
+.Quality div{
+    border: 1px solid white;
+    background-color: rgb(51, 53, 53);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px whitesmoke;
+}
+.Quality div li{
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+/*-------------Section1 Component------------*/  
+.MainSection{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    font-size:medium;
+    gap: 6px;
+}
+.MainSection img{
+    margin: 5px;
+    border-radius: 15px;
+}
+.MainSection h1{
+    font-size:medium;
+    font-weight:bold;
+}
+.MainSection ul li{
+    list-style-position: inside;
+}
+
+/*-----------------AdsOffer Component-----------------*/
+.Adsoffer{
+    padding: 10px;
+}
+.Adsoffer h1{
+    font-size: medium;
+}
+.Adsoffer .content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.Adsoffer ul{
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px grey;
+}
+.Adsoffer li{
+   list-style-position: inside; 
 }
 
 
+/************************ MEDIA QUERIES ***********************/
 @media (min-width:1024px) {
+/*-----------------Contact Component-----------------*/
     .LogoImg{
         min-width: 200px;
         height: 200px;
@@ -107,12 +187,11 @@ button:hover{
         text-align: center;
         font-weight: bold;
     }
-    /* Get in touch component */
+/*-----------------GetInTouch Component-----------------*/
 .GetinTouch{
     display:grid;
     grid-template-columns: 1fr auto;
-    justify-content: space-around;
-    padding: 10px;
+    margin: 10px;
 }
 .highlights{
     display: flex;
@@ -142,7 +221,62 @@ button:hover{
     border-radius: 50%;    
     margin: 20px;
 }
-
-/*-----Section1 Component------*/
-
+.GetinTouchBtn:hover{
+    background-color: rgb(218, 3, 218);
+    cursor: pointer;
+}
+/*--------------Section1 Component--------------*/
+.section1,.section2,.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align:left;
+    gap: 20px;
+    
+}
+.bgImg{
+    background-image: url("growth6.jpg");
+     
+}
+.content1,.growthInfo,.scaling{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 25px;
+    align-items: center;
+    height: 75%;
+    line-height: 30px;
+    background-color: rgba(133, 130, 130, 0.212);
+    
+    border-top: 1px solid rgb(170, 166, 166);
+    border-left: 1px solid rgb(170, 166, 166);
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgb(5, 5, 5);
+    backdrop-filter:blur(15px);
+    
+}
+/*----------------- Quality Component-----------------*/
+.Quality{
+    padding:10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.Adsoffer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.Adsoffer .content{
+    width: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Adsoffer .img{
+    width: 90%;
+}
 }

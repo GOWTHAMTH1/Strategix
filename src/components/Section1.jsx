@@ -1,66 +1,71 @@
 import '../Global.css'
-const Section1 = ({heading,description,subheading1,para1,subheading2,para2,subheading3,para3}) => {
+
+const Section1 = ({MainSection,MiniSectionData,Section1Data,Section2Data,Section3Data,research, research2,growth,Scaling}) => {
   return (
-    <>
     <div className="MainSection">
 
         <div className="MiniSection1">
                 <div className="heading">
-                    <h1>{heading}</h1>
-                    <p>{description}</p>
+                    <h1>{MiniSectionData.heading}</h1>
+                    <p>{MiniSectionData.subheading}</p>
                 </div>
         </div>
-             <div className="section1">    
-                <div className="content1">
-                    <h1>{subheading1}</h1>
-                    <p>{para1}</p>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
+             <div className="section1"> 
+                <div className="bgImg">  
+                    <div className="content1">
+                        <h1>{Section1Data.heading}</h1>
+                        <p>{Section1Data.description}</p>
+                        <ul>{Section1Data.ulHead1}
+                           {research.map((content,index)=>( <li key={index} >{content}</li> ))}
+                        </ul>
+                        <ul>{Section1Data.ulHead2}
+                           {research2.map((content,index)=>( <li key={index} >{content}</li> ))}
+                        </ul>
+                    </div>
+                </div>     
                 <div className="researchImg">
-                    <img src="" alt="" />
+                    <img src={MainSection.inventionImg} alt="invention image" />
                 </div>
             </div>
-            
-        
 
         <div className="section2">
             <div className="growthImg">
-                <img src="" alt="" />
+                <img src={MainSection.growthImg} alt="growth image" />
             </div>
-            <div className="growthInfo">
-                <div>
-                    <h1>{subheading2}</h1>
-                    <p>{para2}</p>
+            <div className="bgImg">
+                <div className="growthInfo">
+                    <div>
+                        <h1>{Section2Data.heading}</h1>
+                        <p>{Section2Data.description}</p>
+                    </div>
+                    <ul> {Section2Data.ulHead1}
+                        {growth.map((content,index)=>( <li key={index} >{content}</li>))}
+                    </ul>
+                    <p></p> 
                 </div>
-                <ul>
-                    <li></li>
-                </ul>
-                <p></p> 
             </div>
         </div>
-
+    
         <div className="section3">
-            <div>
-                <div>
-                    <h1>{subheading3}</h1>
-                    <p>{para3}</p>
+             <div className="bgImg">
+                <div className='scaling'>
+                    <div>
+                        <h1>{Section3Data.heading}</h1>
+                        <p>{Section3Data.description}</p>
+                    </div>
+                    <ul>{Section3Data.ulhead1}
+                        {Scaling.map((content,index)=>( <li key={index} >{content}</li>))}
+                    </ul>
+                    <p></p>
                 </div>
-                <ul>
-                    <li></li>
-                </ul>
-                <p></p>
-            </div>
+            </div>    
             <div className="scalingImg">
-                <img src="" alt="" />
+                <img src={MainSection.teamworkImg} alt="teamworkImage" />
             </div>
         </div>
     </div>
-    </>
+    
+ 
   )
 }
 

@@ -7,6 +7,7 @@ const Contact = () => {
         FirstName:"",
         LastName:"",
         Email:"",
+        CountryCode:"",
         PhoneNumber:"",
         Message:""
       })
@@ -20,9 +21,16 @@ const Contact = () => {
             console.log([name],value);
       }
       const HandleSubmit=(e)=>{
-            e.target.preventDefault()
-            console.log(FormData);
-      }
+            alert(
+              `FirstName:${FormData.FirstName}
+              LastName:${FormData.LastName}
+              Email:${FormData.Email}
+              CountryCode:${FormData.CountryCode}
+              PhoneNumber:${FormData.PhoneNumber}
+              Message:${FormData.Message}`
+                ) 
+        e.target.preventDefault()      
+              }
   return (
     <div className="contact">
       <Hero title="CONTACT US"/>
@@ -39,8 +47,8 @@ const Contact = () => {
               Get in touch with <br /> <span >STRATEGIX</span>
           </div>
         </div>
-        <div className="form" onSubmit={HandleSubmit}>
-        <form action="" >
+        <div className="form" >
+        <form action="" onSubmit={HandleSubmit} >
           <div className='InfoField'>
             <label htmlFor="FirstName">First Name</label>
             <input type="text" value={FormData.FirstName} onChange={HandleChange} required name='FirstName' placeholder="Enter First Name" />
@@ -58,12 +66,12 @@ const Contact = () => {
 
           <div className='InfoField' >
           <label htmlFor="PhoneNumber">Enter Phone Number</label> <br />
-            <select name="PhoneNumber" id="">
+            <select name="CountryCode" onChange={HandleChange}  value={FormData.CountryCode} id="">
               <option value="us">US</option>
               <option value="ind">IND</option>
               <option value="sa">SA</option>
             </select>
-            <input type="Number"  value={FormData.PhoneNumber}  onChange={HandleChange} required name='PhoneNumber' placeholder="Enter Phone Number" />
+            <input type="tel"  value={FormData.PhoneNumber}  onChange={HandleChange} required name='PhoneNumber' placeholder="Enter Phone Number" />
           </div>
 
           <div className='InfoField'>
@@ -72,12 +80,12 @@ const Contact = () => {
           </div>
 
            <div className='InfoField'>
-                <button type='submit' >Send</button>
+                <button type='submit' className='btn' >Send</button>
            </div>
         </form>
         </div>
         <div className="LetsWorkTogether">
-          <div>LET'S <br /> WORK  TOGETHER</div>
+          <h1>LET'S <br /> WORK  TOGETHER</h1>
         </div>
       </div>
     </div>

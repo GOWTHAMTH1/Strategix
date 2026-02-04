@@ -1,9 +1,9 @@
-import teamwork1 from '../assets/teamwork (1).jpg'
-import teamwork2 from '../assets/teamwork (2).jpg'
-import teamwork3 from '../assets/teamwork (3).jpg'
+import teamwork1 from '../assets/teamwork1.jpg'
+import teamwork2 from '../assets/teamwork2.jpg'
+import teamwork3 from '../assets/teamwork3.jpg'
 
 
-const Philosophy = ({title,subtitle,subtitle2}) => {
+const Philosophy = () => {
    
     const reasons=["Actively collaborate with",
     "Are open to data driven decisions",
@@ -12,8 +12,8 @@ const Philosophy = ({title,subtitle,subtitle2}) => {
   return (
         <div className="philosophy-container section">
             <div className="philosophy content">
-                <div className="heading">{title}</div>
-                <p>{subtitle}</p>
+                <h3 className="heading">OUR PHILOSOPHY : PARTNERSHIP FIRST</h3>
+                <p>At Strategix Digital, we work collaboratively with our clients to ensure transparent goals, continuous improvement, and results that truly matter.</p>
             </div>
             <div className="img img1">
                 <img src={teamwork1} alt="group of people image 1" />
