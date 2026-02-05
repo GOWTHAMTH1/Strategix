@@ -1,4 +1,4 @@
-
+import '../Global.css'
 const Hero = ({title,subtitle}) => {
   return (
     <div className="hero ">

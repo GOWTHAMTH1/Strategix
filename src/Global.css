@@ -1,3 +1,24 @@
+/*-----------------Hero Component-----------------*/
+  
+.hero{
+    background-image: url('../public/background.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: white; 
+    font-size: small;
+}
+.hero .content .heading{
+    font-weight: bold;
+    padding: 10px;
+}
 /*-----------------Contact Component-----------------*/
 .contact{   
     width: 100%;
@@ -165,28 +186,28 @@ button:hover{
 /************************ MEDIA QUERIES ***********************/
 @media (min-width:1024px) {
 /*-----------------Contact Component-----------------*/
-    .LogoImg{
-        min-width: 200px;
-        height: 200px;
-    }
-    .contact-details{
-        display: grid;
-        grid-template-columns:1fr 1fr ;
-        justify-content: center;
-        align-items: center;
-    }
-    form .InfoField{
-        display: grid;
-        grid-template-columns:100px 300px;
-        margin: 10px;
-    }
-    .LetsWorkTogether{
-        grid-column: 1/-1;
-        height: 100vh;
-        font-size: xx-large;
-        text-align: center;
-        font-weight: bold;
-    }
+.LogoImg{
+    min-width: 200px;
+    height: 200px;
+}
+.contact-details{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+}
+form .InfoField{
+    display: grid;
+    grid-template-columns:100px 300px;
+    margin: 10px;
+}
+.LetsWorkTogether{
+    grid-column: 1/-1;
+    height: 100vh;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
 /*-----------------GetInTouch Component-----------------*/
 .GetinTouch{
     display:grid;

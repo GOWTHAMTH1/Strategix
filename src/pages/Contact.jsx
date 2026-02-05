@@ -22,7 +22,9 @@ const Contact = () => {
       }
       const HandleSubmit=(e)=>{
             alert(
-              `FirstName:${FormData.FirstName}
+              
+              `Thank you for Contact us
+              FirstName:${FormData.FirstName}
               LastName:${FormData.LastName}
               Email:${FormData.Email}
               CountryCode:${FormData.CountryCode}

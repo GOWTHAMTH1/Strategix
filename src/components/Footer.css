@@ -11,7 +11,7 @@
     grid-template-rows: 1fr ;
     justify-content: center;
 }
-.icons{
+.footer .icons{
     margin:5px 8px ;
 }
 .links a{
