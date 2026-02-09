@@ -16,7 +16,7 @@ const GetinTouch = ({GetinTouchData}) => {
                 <button className="BookingBtn btn" >{GetinTouchData.buttonName}</button>
               </div>
             </div>
-            <div className="GetinTouchBtn btn" onClick={()=>navigate("/contact")}>
+            <div className="GetinTouchBtn btn" onClick={()=>navigate("/contact#contact")}>
               <div> <MdArrowOutward/> Get In Touch  </div>
             </div>
         </div>

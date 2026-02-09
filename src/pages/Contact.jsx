@@ -1,7 +1,8 @@
 import '../Global.css'
 import Hero from '../components/Hero'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from '../assets/logo2.png'
+import { useLocation } from 'react-router-dom'
 const Contact = () => {
       const [FormData,SetFormData]=useState({
         FirstName:"",
@@ -33,8 +34,16 @@ const Contact = () => {
                 ) 
         e.target.preventDefault()      
               }
+             const location= useLocation()
+
+             useEffect(()=>{
+              if (location.hash){
+                const element=document.querySelector(location.hash)
+                element?.scrollIntoView({behavior:"smooth"})
+              }
+             },[location])
   return (
-    <div className="contact">
+    <div className="contact" id='contact' >
       <Hero title="CONTACT US"/>
       <div className="contact-details">
         <div className="getinTouch">
@@ -49,7 +58,7 @@ const Contact = () => {
               Get in touch with <br /> <span >STRATEGIX</span>
           </div>
         </div>
-        <div className="form" >
+        <div className="form"  >
         <form action="" onSubmit={HandleSubmit} >
           <div className='InfoField'>
             <label htmlFor="FirstName">First Name</label>

@@ -141,7 +141,6 @@
     grid-column: 2/3;
     grid-row: 1/3;
     overflow: hidden;
-    background-color: aqua;
     object-fit: cover;
 }
 .philosophy-container .content{
